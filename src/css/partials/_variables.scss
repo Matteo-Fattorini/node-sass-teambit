@@ -18,3 +18,23 @@ $fixedPadding: 50px 0;
   font-style: inherit;
   font-family: inherit;
 }
+
+%logos {
+  @include flex(row, center, flex-start);
+  gap: 20px;
+  width: 100%;
+  span {
+    height: 33px;
+    line-height: 33px;
+  }
+  button {
+    @extend %button;
+    @include flex(row, center, center);
+    font-size: 1.2rem;
+
+    img {
+      width: 15px;
+      margin-right: 5px;
+    }
+  }
+}

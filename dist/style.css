@@ -5,6 +5,7 @@ header .header-content {
   margin: auto;
 }
 
+.speach-content .logos button,
 .jumbotron .left .logos button {
   padding: 5px 10px;
   background-color: darkblue;
@@ -13,6 +14,37 @@ header .header-content {
   border-radius: 5px;
   font-style: inherit;
   font-family: inherit;
+}
+
+.speach-content .logos,
+.jumbotron .left .logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.speach-content .logos span,
+.jumbotron .left .logos span {
+  height: 33px;
+  line-height: 33px;
+}
+
+.speach-content .logos button,
+.jumbotron .left .logos button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.speach-content .logos button img,
+.jumbotron .left .logos button img {
+  width: 15px;
+  margin-right: 5px;
 }
 
 * {
@@ -156,33 +188,6 @@ header .header-content .list-section ul li button img {
   align-self: start;
 }
 
-.jumbotron .left .logos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-  width: 100%;
-}
-
-.jumbotron .left .logos span {
-  height: 33px;
-  line-height: 33px;
-}
-
-.jumbotron .left .logos button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-.jumbotron .left .logos button img {
-  width: 15px;
-  margin-right: 5px;
-}
-
 .jumbotron .right img {
   width: 100%;
 }
@@ -240,7 +245,7 @@ header .header-content .list-section ul li button img {
 }
 
 .examples {
-  padding: 50px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,5 +324,56 @@ header .header-content .list-section ul li button img {
 
 .examples .block img {
   width: 100%;
+}
+
+.speach {
+  background-color: #ffe7d2;
+}
+
+.speach-content {
+  padding: 50px 0;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.speach-content h2 {
+  font-size: 3rem;
+  color: #5a5858;
+  margin-bottom: 35px;
+}
+
+.speach-content .logos {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.speach-content .whiteboard {
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #5c3c01;
+}
+
+.speach-content .whiteboard .letter-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.speach-content .whiteboard .letter-footer img {
+  height: 50px;
+  margin-right: 25px;
+}
+
+.speach-content .whiteboard .letter-footer div:first-child {
+  color: steelblue;
 }
 
