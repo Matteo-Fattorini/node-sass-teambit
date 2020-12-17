@@ -1,0 +1,52 @@
+footer {
+  @include flex(row, center, flex-start);
+  @extend %fixedWidth;
+  padding: $fixedPadding;
+  color: $titleColor;
+  font-weight: 500;
+
+  .left-side {
+    padding: $fixedPadding;
+    align-self: start;
+    width: 25%;
+    .footer-logo {
+      @include flex(row, center, flex-start);
+      img {
+        height: 50px;
+        margin-right: 10px;
+      }
+      span {
+        color: steelblue;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .right-side {
+    @include flex(row, flex-start, space-around);
+    width: 75%;
+    padding: $fixedPadding;
+
+    .box {
+      width: 100% / 5;
+
+      &:last-child {
+        max-width: 250px;
+      }
+
+      p {
+        line-height: 35px;
+      }
+
+      h2 {
+        margin-bottom: 25px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
