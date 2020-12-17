@@ -1,3 +1,4 @@
+.section-orange,
 .jumbotron,
 header .header-content {
   width: 70%;
@@ -184,5 +185,57 @@ header .header-content .list-section ul li button img {
 
 .jumbotron .right img {
   width: 100%;
+}
+
+.orange {
+  background-color: #ffe7d2;
+  width: 100%;
+}
+
+.section-orange {
+  padding: 50px 0;
+  padding-bottom: 0;
+}
+
+.section-orange .title {
+  text-align: center;
+  color: #5a5858;
+  margin-bottom: 150px;
+  font-size: 1.5rem;
+}
+
+.section-orange .images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-orange .images .image {
+  text-align: center;
+  margin: 50px 0 200px 0;
+}
+
+.section-orange .images .image img {
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+.section-orange .images .image div {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.section-orange .rabbit {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.section-orange .lower-section {
+  padding: 100px 0;
+}
+
+.section-orange .title {
+  margin-bottom: 50px;
 }
 
