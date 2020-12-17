@@ -1,0 +1,77 @@
+.examples {
+  padding: 50px;
+  @include flex(column, center, center);
+   
+
+  .block-container{
+      width: 80%;
+      @include flex(row, center,flex-start);
+      
+      &:nth-child(even){
+          align-self: flex-end;
+      }
+      &:nth-child(odd){
+          align-self: flex-start;
+      }
+       &.big-right {
+          
+          .left-side {
+              width: 30%;
+          }
+          .right-side {
+              width: 70%;
+          }
+
+          .infobox {
+              img {
+              transform: translateY(35%);
+          }
+          }
+      }
+      &.big-left {
+         
+          .left-side {
+              width: 70%;
+          }
+          .right-side {
+              width: 30%;
+          }
+          .infobox {
+              img {
+              transform: translateY(55%);
+          }
+          }
+          
+          
+      }}
+
+      .block{
+        @include flex(row, flex-start,center);
+        width: 100%;
+        margin-bottom: 100px;
+
+      .infobox {
+          padding-top: 20px;
+          h3 {
+              color:$titleColor;
+              font-size: 2rem;
+              margin-bottom: 50px;
+          }
+          p {
+              font-size: 1.2rem;
+              color: $textColor;
+              margin-bottom: 50px;
+          }
+          
+          a {
+              color: steelblue;
+              font-size: 1.5rem;
+          }
+
+          
+      }
+      img {
+          width: 100%;
+      }
+     
+  }}

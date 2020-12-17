@@ -160,7 +160,7 @@ header .header-content .list-section ul li button img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 20px;
   width: 100%;
 }
@@ -237,5 +237,87 @@ header .header-content .list-section ul li button img {
 
 .section-orange .title {
   margin-bottom: 50px;
+}
+
+.examples {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.examples .block-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.examples .block-container:nth-child(even) {
+  align-self: flex-end;
+}
+
+.examples .block-container:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.examples .block-container.big-right .left-side {
+  width: 30%;
+}
+
+.examples .block-container.big-right .right-side {
+  width: 70%;
+}
+
+.examples .block-container.big-right .infobox img {
+  transform: translateY(35%);
+}
+
+.examples .block-container.big-left .left-side {
+  width: 70%;
+}
+
+.examples .block-container.big-left .right-side {
+  width: 30%;
+}
+
+.examples .block-container.big-left .infobox img {
+  transform: translateY(55%);
+}
+
+.examples .block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.examples .block .infobox {
+  padding-top: 20px;
+}
+
+.examples .block .infobox h3 {
+  color: #5a5858;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.examples .block .infobox p {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.examples .block .infobox a {
+  color: steelblue;
+  font-size: 1.5rem;
+}
+
+.examples .block img {
+  width: 100%;
 }
 

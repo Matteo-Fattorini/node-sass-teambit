@@ -33,7 +33,7 @@
     }
 
     .logos {
-      @include flex(row, center, start);
+      @include flex(row, center, flex-start);
       gap: 20px;
       width: 100%;
       span {
