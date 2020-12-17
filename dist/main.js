@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\NoSync\TODO\src\js\main.js */"./src/js/main.js");
-module.exports = __webpack_require__(/*! D:\NoSync\TODO\src\css\style.scss */"./src/css/style.scss");
+__webpack_require__(/*! D:\NoSync\node-sass-teambit\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! D:\NoSync\node-sass-teambit\src\css\style.scss */"./src/css/style.scss");
 
 
 /***/ })

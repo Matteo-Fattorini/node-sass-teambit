@@ -1,0 +1,23 @@
+%fixedWidth {
+    width: 70%;
+    margin:auto;
+}
+
+
+
+$buttonColor: darkblue;
+$titleColor : rgb(90, 88, 88);
+$textColor: grey;
+
+
+
+%button {
+    padding: 5px 10px;
+    background-color: $buttonColor;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-style: inherit;
+    font-family: inherit;
+    
+}
