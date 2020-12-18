@@ -580,6 +580,10 @@ footer .right-side .box li {
   footer .left-side {
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   footer .right-side {
