@@ -10,7 +10,7 @@
 
   .title {
     text-align: center;
-    color: $titleColor;
+    color: $contrastText;
     margin-bottom: 150px;
     font-size: 1.5rem;
   }
@@ -22,13 +22,15 @@
       text-align: center;
       margin: 50px 0 200px 0;
       img {
-        height: 150px;
+        background-color: $contrastText;
+        border-radius: 20px;
+        height: 250px;
         margin-bottom: 50px;
       }
 
       div {
-        color: $textColor;
-        font-size: 1.2rem;
+        color: white;
+        font-size: 1.5rem;
       }
     }
   }
@@ -36,6 +38,11 @@
   .rabbit {
     text-align: center;
     margin-bottom: 150px;
+    img{
+      background-color: $contrastText;
+      border-radius: 50px;
+      padding: 30px;
+    }
   }
 
   .lower-section {

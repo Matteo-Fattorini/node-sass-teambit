@@ -21,31 +21,29 @@ header {
       min-width: 500px;
       ul {
         @include flex(row, center, space-between);
-        
+
         li {
           font-weight: bold;
           font-size: 1rem;
-          &:not(:last-child){
-            color:$textColor;
+          &:not(:last-child) {
+            color: $textColor;
           }
           button {
-            @include flex(row, center,center);
+            @include flex(row, center, center);
             font-weight: inherit;
             font-family: inherit;
             font-size: inherit;
             padding: 10px 40px;
             background-color: inherit;
-            color: steelblue;
-            border: 1px solid steelblue;
+            color: $textColor;
+            border: 1px solid $textColor;
             border-radius: 5px;
             white-space: nowrap;
 
             img {
               margin-right: 5px;
-              width: 50%;
+              height: 20px;
             }
-
-
           }
         }
       }

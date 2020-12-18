@@ -1,0 +1,44 @@
+@media screen and (max-width: 1200px) {
+  %fixedWidth {
+    width: 100%;
+    
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+// !jumbo
+
+  .jumbotron {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    .logos {
+      justify-content: center !important;
+    }
+
+    .left,
+    .right {
+      width: 100%;
+    }
+    .left {
+      text-align: center;
+      gap: 30px;
+      span {
+        align-self: center;
+      }
+    }
+  }
+
+// !orange
+.section-orange{
+    .images {
+    flex-direction: column;
+    .image {
+        margin: 0;
+    }
+}
+
+}
+}

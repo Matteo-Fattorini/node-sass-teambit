@@ -3,10 +3,11 @@
   margin: auto;
 }
 
-$buttonColor: darkblue;
-$titleColor: rgb(90, 88, 88);
-$textColor: grey;
-$orange: #ffe7d2;
+$buttonColor: #7F14D4;
+$titleColor: #3E14E9;
+$textColor: #3E14E9;
+$orange: #0414B3;
+$contrastText: #fff;
 $fixedPadding: 50px 0;
 
 %button {
@@ -38,3 +39,4 @@ $fixedPadding: 50px 0;
     }
   }
 }
+

@@ -9,7 +9,7 @@ header .header-content {
 .speach-content .logos button,
 .jumbotron .left .logos button {
   padding: 5px 10px;
-  background-color: darkblue;
+  background-color: #7F14D4;
   color: white;
   border: none;
   border-radius: 5px;
@@ -125,7 +125,7 @@ header .header-content .list-section ul li {
 }
 
 header .header-content .list-section ul li:not(:last-child) {
-  color: grey;
+  color: #3E14E9;
 }
 
 header .header-content .list-section ul li button {
@@ -138,15 +138,15 @@ header .header-content .list-section ul li button {
   font-size: inherit;
   padding: 10px 40px;
   background-color: inherit;
-  color: steelblue;
-  border: 1px solid steelblue;
+  color: #3E14E9;
+  border: 1px solid #3E14E9;
   border-radius: 5px;
   white-space: nowrap;
 }
 
 header .header-content .list-section ul li button img {
   margin-right: 5px;
-  width: 50%;
+  height: 20px;
 }
 
 .jumbotron {
@@ -171,17 +171,17 @@ header .header-content .list-section ul li button img {
 }
 
 .jumbotron .left span {
-  color: grey;
+  color: #3E14E9;
 }
 
 .jumbotron .left h1 {
-  color: #5a5858;
+  color: #3E14E9;
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .jumbotron .left p {
-  color: grey;
+  color: #3E14E9;
   font-size: 1.5rem;
 }
 
@@ -195,7 +195,7 @@ header .header-content .list-section ul li button img {
 }
 
 .orange {
-  background-color: #ffe7d2;
+  background-color: #0414B3;
   width: 100%;
 }
 
@@ -206,7 +206,7 @@ header .header-content .list-section ul li button img {
 
 .section-orange .title {
   text-align: center;
-  color: #5a5858;
+  color: #fff;
   margin-bottom: 150px;
   font-size: 1.5rem;
 }
@@ -224,18 +224,26 @@ header .header-content .list-section ul li button img {
 }
 
 .section-orange .images .image img {
-  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 250px;
   margin-bottom: 50px;
 }
 
 .section-orange .images .image div {
-  color: grey;
-  font-size: 1.2rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .section-orange .rabbit {
   text-align: center;
   margin-bottom: 150px;
+}
+
+.section-orange .rabbit img {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 30px;
 }
 
 .section-orange .lower-section {
@@ -308,14 +316,14 @@ header .header-content .list-section ul li button img {
 }
 
 .examples .block .infobox h3 {
-  color: #5a5858;
+  color: #3E14E9;
   font-size: 2rem;
   margin-bottom: 50px;
 }
 
 .examples .block .infobox p {
   font-size: 1.2rem;
-  color: grey;
+  color: #3E14E9;
   margin-bottom: 50px;
 }
 
@@ -329,7 +337,7 @@ header .header-content .list-section ul li button img {
 }
 
 .speach {
-  background-color: #ffe7d2;
+  background-color: #0414B3;
 }
 
 .speach-content {
@@ -343,14 +351,19 @@ header .header-content .list-section ul li button img {
 }
 
 .speach-content h2 {
+  text-align: center;
   font-size: 3rem;
-  color: #5a5858;
+  color: #fff;
   margin-bottom: 35px;
 }
 
 .speach-content .logos {
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.speach-content .or-use-mail {
+  color: #fff;
 }
 
 .speach-content .whiteboard {
@@ -385,7 +398,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   padding: 50px 0;
-  color: #5a5858;
+  color: #3E14E9;
   font-weight: 500;
 }
 
@@ -408,7 +421,7 @@ footer .left-side .footer-logo img {
 }
 
 footer .left-side .footer-logo span {
-  color: steelblue;
+  color: #7F14D4;
 }
 
 footer .left-side .footer-logo p {
@@ -442,5 +455,50 @@ footer .right-side .box h2 {
 
 footer .right-side .box li {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  header .header-content,
+  .jumbotron,
+  .section-orange,
+  footer {
+    width: 100%;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .jumbotron {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .jumbotron .logos {
+    justify-content: center !important;
+  }
+
+  .jumbotron .left,
+  .jumbotron .right {
+    width: 100%;
+  }
+
+  .jumbotron .left {
+    text-align: center;
+    gap: 30px;
+  }
+
+  .jumbotron .left span {
+    align-self: center;
+  }
+
+  .section-orange .images {
+    flex-direction: column;
+  }
+
+  .section-orange .images .image {
+    margin: 0;
+  }
 }
 
