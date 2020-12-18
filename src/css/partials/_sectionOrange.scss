@@ -17,6 +17,7 @@
 
   .images {
     @include flex(row, center, space-between);
+    flex-wrap: wrap;
 
     .image {
       text-align: center;
@@ -38,7 +39,7 @@
   .rabbit {
     text-align: center;
     margin-bottom: 150px;
-    img{
+    img {
       background-color: $contrastText;
       border-radius: 50px;
       padding: 30px;

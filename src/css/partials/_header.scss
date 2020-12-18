@@ -5,6 +5,9 @@ header {
     height: 80px;
     border-bottom: 1px solid black;
 
+    .hidden-menu {
+      display: none;
+    }
     .logo {
       opacity: 0.7;
       img {
